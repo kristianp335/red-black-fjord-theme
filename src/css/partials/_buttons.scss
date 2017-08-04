@@ -1,0 +1,145 @@
+.btn-xl {
+	font-size: $font-size-base;
+	font-weight: normal;
+	padding: $button-padding;
+	text-transform: uppercase;
+}
+
+.btn-theme-default {
+	background-color: $color-2;
+	border-color: $color-2;
+	color: #0A0A0A;
+
+	&:hover, &:focus {
+		background-color: $color-2;
+		border-color: transparent;
+		color: $background-color-3;
+		text-decoration: none;
+	}
+}
+
+.btn-theme-primary {
+	background-color: transparent;
+	border-color: $color-2;
+	color: #FFF;
+
+	&:hover, &:focus {
+		background-color: $color-2;
+		border-color: transparent;
+		color: #0A0A0A;
+		text-decoration: none;
+	}
+}
+
+.btn-theme-info {
+	background-color: $background-color-3;
+	border-color: $color-2;
+
+	&:hover, &:focus {
+		background-color: $color-2;
+		border-color: $background-color-3;
+		color: #0A0A0A;
+		text-decoration: none;
+	}
+}
+
+.btn-default {
+	
+
+	&:hover, &:focus {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		color: #fff;
+		
+	}
+	&:active {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		color: #fff;
+		
+	}
+}
+
+.btn-default.active {
+
+	background-color: $vehicle-color-red-hover;
+	border-color: $vehicle-color-border-red-hover;
+	color: #fff;
+
+	&:hover, &:focus {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		color: #fff;
+		
+	}
+	&:active {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		color: #fff;
+		
+	}
+}
+
+.btn-primary.disabled {
+	background-color: $disabled-color-grey;
+	border-color: $disabled-color-grey-border;
+
+}
+
+.ddl-form-name {
+	display: none;
+}
+
+.multi-step-progress-bar > .active {
+	color:  $vehicle-color-red;
+}
+
+.multi-step-progress-bar > .active .divider {
+	color: 	$vehicle-color-red;
+	background-color: $vehicle-color-red;
+}
+
+.form-control search-query {
+	border-color: $vehicle-color-red;
+	color: $vehicle-color-red;
+}
+
+.form-control search-query:active {
+	border-color: $vehicle-color-red;
+	color: $vehicle-color-red;
+}
+
+.btn-primary {
+
+	background-color: $vehicle-color-red;
+	border-color: $vehicle-color-border-red;
+	color: #FFF !important;
+	margin-bottom: 5px;
+
+	&:hover, &:focus {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		
+	}
+}
+
+.btn-info {
+
+	background-color: $vehicle-color-red;
+	border-color: $vehicle-color-border-red;
+	color: #FFF !important;
+
+	&:hover, &:focus {
+		background-color: $vehicle-color-red-hover;
+		border-color: $vehicle-color-border-red-hover;
+		
+	}
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: $vehicle-color-red;
+}
+
+.modal-inverse a, .modal-inverse .btn-link {
+	color: $vehicle-color-red;
+}

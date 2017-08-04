@@ -1,0 +1,331 @@
+@import "portlet_decorator";
+@import "partials/buttons";
+@import "partials/footer";
+@import "partials/navbar";
+@import "bourbon";
+@import "mixins";
+
+#column-1 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+body
+
+#content {
+	max-width: 1250px;
+	padding-top: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin: auto;
+	color: $color-1;
+}
+
+.portlet-title-text {	
+	color: $vehicle-color-red;	
+	font-size: 18px;
+	font-weight: bold;
+	max-width: 100%;
+	width: 100%;
+	border-bottom: 2px dotted;
+	padding-bottom: 10px;
+}
+
+#wrapper {
+	padding-top: 0px;
+	background-color: #c4c6c5;
+}
+
+.portlet-layout.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.big-item-list-template h2 + p,
+.list-packages-template h3 + p + p {
+	@include md {
+		min-height: 70px;
+	}
+}
+
+.jumbotron {
+	background-color: transparent;
+	margin-bottom: 0;
+
+	h2 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.badge {
+		margin-bottom: 18px;
+	}
+
+	.well {
+		background-color: rgba(#FFF, 0.08);
+		border-width: 0;
+
+		.h2 {
+			color: $color-4;
+		}
+
+		.currency {
+			top: -2.5em;
+		}
+
+		p.small {
+			font-size: 85%;
+			margin-top: 40px;
+			opacity: 0.4;
+		}
+
+		& + ul.list-unstyled {
+			opacity: 0.6;
+		}
+	}
+}
+
+.h1 {
+	font-size: 54px;
+
+	@include sm {
+		font-weight: normal;
+		line-height: 1.1;
+	}
+}
+
+.img-spacing {
+	margin-bottom: 15px;
+}
+
+[class$="-background-color"] {
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+	@include sm {
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+}
+
+.default-background-color {
+	background-color: $color-2;
+
+	p {
+		opacity: 0.5;
+	}
+
+	&, & a {
+		color: $color-1;
+	}
+}
+
+.main-background-color {
+	background-color: $background-color-3;
+}
+
+.secondary-background-color {
+	background-color: $background-color-1;
+}
+
+.tertiary-background-color {
+	background-color: $background-color-2;
+}
+
+.main-background-color, .secondary-background-color, .tertiary-background-color {
+	color: $color-2;
+
+	a {
+		color: $color-2;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+[class$="-background-image"] {
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $color-2;
+	padding-bottom: 95px;
+	padding-top: 95px;
+
+	p a {
+		color: $color-2;
+	}
+
+	@include sm {
+		min-height: 560px;
+		padding-bottom: 190px;
+		padding-top: 190px;
+	}
+}
+
+.tertiary-background-image {
+	color: $color-1;
+	position: relative;
+
+	@include media-query(sm, $screen-sm-max) {
+		padding-top: 80px;
+	}
+
+	@include sm {
+		margin-bottom: 95px;
+	}
+
+	p {
+		opacity: 0.5;
+	}
+
+	.col-lg-6.col-md-6 {
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+@include media-query(null, $breakpoint_tablet - 1) {
+	[class^="col-"] {
+		.default-background-color &,
+		.main-background-color &,
+		.secondary-background-color &,
+		.tertiary-background-color & {
+			margin-bottom: 30px
+		}
+	}
+}
+
+.store-buttons {
+	img {
+		height: 40px;
+		width: auto;
+	}
+} 
+
+#banner {
+	padding-bottom: 15px;
+	border-top: 2px solid $color-1;
+	background-image: linear-gradient(to right,   $color-1, $vehicle-color-red) !important;  
+	
+}
+
+.lexicon-icon lexicon-icon-search {
+	color: #ffffff;
+}
+
+a, a:hover, a:visited, a:active {
+	color: $vehicle-color-red;	
+}
+
+
+.scheduler-today-hd {
+	color: $vehicle-color-red !important;
+	border-bottom: 3px solid $vehicle-color-red !important;
+}
+
+.yui3-calendar-weekday {
+	color: $vehicle-color-red !important;
+
+}
+
+.yui3-skin-sam .calendar-portlet .yui3-calendar-day.lfr-current-day {
+	background-color: $vehicle-color-red !important;
+}
+
+.scheduler-view-table-colgrid-today {
+		border: 1px solid $vehicle-color-red !important;
+}
+
+.scheduler-view-table-data-col-title-today {
+		color: $vehicle-color-red !important;
+		border: 1px solid $vehicle-color-red !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: $color-1;
+}
+
+.navbar-default .navbar-nav > .active > a:after {
+	background-color: $vehicle-color-red;
+}
+
+#banner .navbar {
+	margin-top: 10px;
+}
+
+
+.nav-tabs {
+	li.active {
+		a:focus {color: $vehicle-color-red !important;
+		}
+		a:hover {color: $vehicle-color-red !important;
+		}
+		
+	}
+}
+
+.lfr-add-panel .lfr-device-item.selected .icon, .lfr-simulation-panel .lfr-device-item.selected .icon {
+	background-color: $vehicle-color-red;
+}
+
+.lfr-add-panel .lfr-device-item.selected, .lfr-simulation-panel .lfr-device-item.selected {
+	color: $vehicle-color-red;
+}
+
+.form-control:focus {
+	border-color: $color-1;
+	color: $color-1;
+}
+
+.field.search-input.form-control {
+	color: #FFF !important;
+	max-width: 180px !important;
+	border-bottom: #FFF solid 2px;
+}
+
+.lexicon-icon lexicon-icon-search {
+	color: #FFF;
+}
+
+.search-input:active {
+	color: #fff;
+	border-bottom: #fff solid 2px;
+}
+
+.krissearch {
+	max-width: 250px;
+}
+
+.alert.alert-danger {
+	display: none;
+}
+
+.panel-default > .panel-heading {
+	border-color: $vehicle-color-red;
+	color: $color-1;
+	background-color: $mid-grey;
+}
+
+a.text-primary {
+	a:focus {
+		color: $vehicle-color-red;
+	}
+	a:active {
+		color: $vehicle-color-red;
+	}
+	color: $vehicle-color-red;
+	
+}
+
+.btn btn-lg btn-primary lfr-ddm-form-pagination-prev {
+		margin-bottom: 10px;
+}
